@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: linear-gradient(to top, cornflowerblue, midnightblue);
+    width: 100%;
+    text-align: start;
+    position: fixed;
+    z-index: 9999;
+    
+    & * {
+        display: inline-block;
+    }
+
+    & a {
+        text-decoration: none;
+        color: white; 
+        padding: 16px 20px;
+        font-size: 18px;
+    }
+
+    & a:hover {
+        color: white;
+        background-color: rgba(0, 89, 255, 0.503);
+    }
+
+    & a:last-child {
+        background-color: white;
+        color: blue;
+        border: 2px solid darkblue;
+        padding: 6px 20px;
+        margin-left: 880px;
+        border-radius: 20px;
+    }
+
+    & a:last-child:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+
+main {
+    background-color: white;
+
+    & #introducao {
+        width: 80%;
+        margin: auto;
+        padding: 120px 0 60px 0;
+    }
+
+    & section p {
+        font-size: larger;
+    }
+
+    & #cursos h1 {
+        position: absolute;
+        width: 93%;
+        bottom: 47%;
+        margin-left: 50px;
+        background-color: blue;
+        padding: 7px 0;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+    }
+
+    & #cursos {
+        background-color: midnightblue;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 0; 
+        padding: 115px 0 60px 0;
+        width: 100%;
+    }
+
+    & #cursos div {
+        padding: 70px 40px;
+        background-color: cornflowerblue;
+        width: 60%;
+        margin: auto;
+        border-radius: 10px;  
+        box-shadow: 0 0 10px rgba(0, 72, 255, 0.422); 
+        color: white;     
+    }
+    
+    & #cursos img {
+        width: 100%;
+    }
+
+    & #cursos div h2, #cursos div p {
+        position: relative;
+        top: 60px;
+        text-align: center;
+    }  
+
+    & #cursos h2 {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 7px 0;
+    }
+    
+    & #depoimentos h1 {
+        position: absolute;
+        width: 95%;
+        margin-left: 40px;
+        top: 2720px;
+        background-color: blue;
+        padding: 7px 0;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+    }
+
+    & #depoimentos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px; 
+        margin: auto;
+        padding: 115px 0 60px 0;
+    }
+
+    & #depoimentos div {
+        border-radius: 10px;
+        padding: 7px 20px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 76, 255, 0.399);
+    }
+
+    & #depoimentos div:hover {
+        background-color: cornflowerblue;
+        color: white;
+    }
+}
+ 
+dialog {
+    width: 30%;
+    height: 40%;
+    padding: 20px;
+    padding-top: 0px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 34);
+    color: aqua;
+    text-align: center;
+
+    & #email, #senha {
+        width: 90%;
+        padding: 9px 0 9px 5px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 75, 0.836);
+        border-color: white;
+        color: white;
+        margin-top: 20px;
+    }
+
+    & button {
+        margin-top: 40px;
+        width: 45%;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 9px 0;
+        cursor: pointer;
+    }
+
+    & #btnFechar {
+        color: red;
+        border-color: red;
+    }
+
+    & #btnFechar:hover {
+        color: white;
+        background-color: red;
+        border-color: red;
+    }
+
+    & #btnEntrar {
+        color: green;
+        border-color: green;
+    }
+
+    & #btnEntrar:hover {
+        color: white;
+        border-color: green;
+        background-color: green;
+    }
+
+    & p.erro {
+        padding: 10px;
+        background-color: rgb(255, 190, 190);
+        color: rgb(86, 2, 2);
+        text-align: center;
+    }
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+footer {
+    background: radial-gradient(cornflowerblue, midnightblue);
+
+    & section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px 0;
+    }
+
+    & div {
+        margin: auto;
+        text-align: center;
+        width: 60%;
+    }
+
+    & div span {
+        background-color: dodgerblue;
+        color: white;
+        box-shadow: 0 0 8px mediumblue;
+        padding: 10px 30px;
+        border-radius: 6px;
+        font-size: x-large;
+    }
+
+    & p {
+        background-color: white;
+        padding: 20px 30px;
+        margin-top: 50px;
+        border-radius: 5px;
+        font-size: larger;
+    }
+
+    & input {
+        margin: 5px 10px;
+        border: none;
+        padding: 8px 5px;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    & #btnLimpar {
+        background-color: white;
+        color: red;
+        border: 1px solid red;
+        cursor: pointer;
+        padding: 8px 0;
+        width: 44%;
+    }
+
+    & #btnLimpar:hover {
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+    }
+
+    & #btnRegistrar {
+        background-color: white;
+        color: limegreen;
+        border: 1px solid limegreen;
+        padding: 8px 0;
+        width: 43%;
+    }
+
+    & #btnRegistrar:hover {
+        background-color: limegreen;
+        color: white;
+        border: 1px solid limegreen;
+    }
+
+    & #nome, #idade, #mail, #telefone, #nascimento {
+        width: 90%;
+    }
+
+    & label {
+        color: rgb(0, 0, 54);
+    }
+}
