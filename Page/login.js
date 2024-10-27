@@ -13,7 +13,8 @@ const login = document.getElementById('login');
 const formLogin = document.querySelector('#login form');
 
 let dadosUsuario = [
-    { nome: "teste", email: "teste@teste.com", senha: 13579 },
+    { nome: "rafael", email: "rafael@email.com", senha: 13579 },
+    { nome: "maick", email: "maick@email.com", senha: 24568 },
 ];
 
 formLogin.addEventListener('submit', evento => {
