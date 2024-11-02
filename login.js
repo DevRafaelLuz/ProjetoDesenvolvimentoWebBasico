@@ -31,7 +31,7 @@ formLogin.addEventListener('submit', evento => {
             sessionStorage.setItem('usuarioLogado', true);
             sessionStorage.setItem('nomeUsuario', usuario.nome);
 
-            window.location.href = "../Admin/index.html";
+            window.location.href = "Admin/index.html";
         }
     });
 

@@ -1,30 +1,25 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Página Administrativa</title>
-        <link rel="stylesheet" href="style.css">  
-        <script src="script.js"></script>      
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <nav>
-                <a href="#registro-alunos">Alunos</a>
-                <a href="#inscricoes">Inscrições</a>
+                <a href="index.html">Alunos</a>
+                <a href="inscricoes.html">Inscrições</a>
                 <a href="#" id="logout">Sair</a>
             </nav>
         </header>
         <main>
-            <section id="registro-alunos">
-                <h1>REGISTRAR NOVO ALUNO</h1>
-                <form method="post" id="formRegistro">
-                    <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
-                    <input type="number" name="idade" id="idade" placeholder="Idade" oninput="validateInput(this)" required><br>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required><br>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
-                    <label for="nascimento" id="data">Data de Nascimento:</label><br>
-                    <input type="date" name="nascimento" id="nascimento" required><br>
+            <section id="inscricoes">
+                <h1>INSCRIÇÕES DOS ALUNOS</h1>
+                <form method="post" id="formInscricoes">
+                    <input type="text" name="nomeInscricao" id="nomeInscricao" placeholder="Nome do Aluno" required><br>
+                    <input type="email" name="emailInscricao" id="emailInscricao" placeholder="E-mail" required><br>
                     <label for="curso-desejado">Selecione o curso:</label>
                     <select name="curso-desejado" id="curso-desejado">
                         <option value="" selected disabled>Selecione</option>
@@ -49,24 +44,7 @@
                     <button type="submit" class="btnRegistrar">Registrar</button>
                 </form>
                 <hr>
-                <h1>DADOS DOS ALUNOS</h1>
-                <table id="alunos">
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Idade</th>
-                            <th>E-mail</th>
-                            <th>Telefone</th>
-                            <th>Data de Nascimento</th>
-                            <th>Acão</th>
-                        </tr>
-                    </thead>
-                    <tbody>&nbsp;</tbody>
-                </table>
-                <hr>
-            </section>
-            <section id="inscricoes">
-                <h1>INSCRIÇÕES</h1>
+                <h1>ALUNOS INSCRITOS NOS CURSOS</h1>
                 <table id="tblInscricao">
                     <thead>
                         <tr>
@@ -81,8 +59,6 @@
                 </table> 
             </section>
         </main>
-        <script src="login.js"></script>
-        <script src="cadastro.js"></script>
-        <!--<script src="inscricoes.js"></script>-->
+        <script src="inscricoes.js"></script>
     </body>
 </html>

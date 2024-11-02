@@ -52,6 +52,7 @@ main {
     & #inscricoes {
         width: 95%;
         margin: auto;
+        padding: 65px 0 0 0;
     }
 
     & .alterar {
@@ -96,7 +97,7 @@ main {
     }
 
     & .btnRegistrar, .btnLimpar {
-        width: 425px;
+        width: 429px;
         border-radius: 4px;
         cursor: pointer;
         margin: 8px 0 12px 0;

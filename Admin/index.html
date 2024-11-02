@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Administrativa</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Alunos</a>
+                <a href="inscricoes.html">Inscrições</a>
+                <a href="#" id="logout">Sair</a>
+            </nav>
+        </header>
+        <main>
+            <section id="registro-alunos">
+                <h1>REGISTRAR NOVO ALUNO</h1>
+                <form method="post" id="formRegistro">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+                    <input type="number" name="idade" id="idade" placeholder="Idade" oninput="validateInput(this)" required><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
+                    <label for="nascimento" id="data">Data de Nascimento:</label><br>
+                    <input type="date" name="nascimento" id="nascimento" required><br>                    
+                    <button type="reset" class="btnLimpar">Limpar</button>
+                    <button type="submit" class="btnRegistrar">Registrar</button>
+                </form>
+                <hr>
+                <h1>DADOS DOS ALUNOS</h1>
+                <table id="alunos">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Data de Nascimento</th>
+                            <th>Acão</th>
+                        </tr>
+                    </thead>
+                    <tbody>&nbsp;</tbody>
+                </table>
+            </section>            
+        </main>
+        <script src="login.js"></script>
+        <script src="cadastro.js"></script>
+    </body>
+</html>
