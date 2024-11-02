@@ -42,7 +42,7 @@ function atualizarTabelaInscricoes() {
         <td>${inscricao.curso}</td>
         <td>${inscricao.statusCurso}</td>
         <td>
-            <a href="?chave=${chaveInscricao}" class="alterar">Alterar</a>
+            <a href="?chaveInscricao=${chaveInscricao}" class="alterar">Alterar</a>
             <a href="#" onclick="removerInscricao(${chaveInscricao})" class="excluir">Excluir</a>
         </td>`;
         tbodyInscricoes.appendChild(linhaInscricoes);

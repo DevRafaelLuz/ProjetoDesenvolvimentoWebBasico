@@ -56,9 +56,9 @@ main {
 
     & #cursos h1 {
         position: absolute;
-        width: 93%;
-        bottom: 48%;
-        margin-left: 50px;
+        width: 92.2%;
+        left: 7%;
+        transform: translate(-46px, -260%);
         background: radial-gradient(white, cornflowerblue);
         padding: 7px 0;
         text-align: center;
