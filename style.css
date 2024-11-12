@@ -9,9 +9,10 @@ header {
     text-align: start;
     position: fixed;
     z-index: 9999;
-    
-    & * {
-        display: inline-block;
+
+    & nav {
+        display: flex;
+        flex-grow: 1;
     }
 
     & a {
@@ -23,21 +24,11 @@ header {
 
     & a:hover {
         color: white;
-        background-color: rgba(0, 89, 255, 0.503);
+        background-color: blue;
     }
 
     & a:last-child {
-        background-color: white;
-        color: blue;
-        border: 2px solid darkblue;
-        padding: 6px 20px;
-        margin-left: 1017px;
-        border-radius: 6px;
-    }
-
-    & a:last-child:hover {
-        background-color: blue;
-        color: white;
+        margin-left: auto;
     }
 }
 
