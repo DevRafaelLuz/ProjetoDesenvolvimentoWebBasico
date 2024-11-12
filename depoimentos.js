@@ -33,7 +33,7 @@ document.getElementById('formDepoimento').addEventListener('submit', e => {
 });
 
 function adicionarDepoimento() {
-    const div = document.getElementById('depoimentos');
+    const div = document.querySelector('#depoimentos div');
     dados.forEach((depoimento) => {
         const avaliacao = document.createElement('div');
         avaliacao.innerHTML = `
