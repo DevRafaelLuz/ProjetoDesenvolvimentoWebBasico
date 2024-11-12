@@ -45,11 +45,17 @@ main {
         font-size: larger;
     }
 
+    & #cursos {
+        background-color: midnightblue;
+        gap: 40px; 
+        padding: 40px 0 60px 0;
+        width: 100%;
+    }
+
     & #cursos h1 {
-        position: absolute;
-        width: 92.2%;
-        left: 7%;
-        transform: translate(-46px, -260%);
+        width: 92%;
+        margin: auto;
+        margin-bottom: 23px;
         background: radial-gradient(white, cornflowerblue);
         padding: 7px 0;
         text-align: center;
@@ -57,17 +63,14 @@ main {
         border-radius: 20px;
     }
 
-    & #cursos {
-        background-color: midnightblue;
+    & #cursos #cursosDisponiveis {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px 0; 
-        padding: 115px 0 60px 0;
-        width: 100%;
+        gap: 50px 0;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
-    & #cursos div {
-        padding: 70px 40px;
+    & #cursos .curso {
+        padding: 50px 40px;
         background-color: cornflowerblue;
         width: 60%;
         margin: auto;
@@ -83,7 +86,6 @@ main {
 
     & #cursos div h2, #cursos div p {
         position: relative;
-        top: 60px;
         text-align: center;
     }  
 
