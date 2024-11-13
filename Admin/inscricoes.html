@@ -18,8 +18,8 @@
             <section id="inscricoes">
                 <h1>INSCRIÇÕES DOS ALUNOS</h1>
                 <form method="post" id="formInscricoes">
-                    <input type="text" name="nomeInscricao" id="nomeInscricao" placeholder="Nome do Aluno" required><br>
-                    <input type="email" name="emailInscricao" id="emailInscricao" placeholder="E-mail" required><br>
+                    <input type="text" name="nomeInscricao" id="nomeInscricao" placeholder="Nome do Aluno" required>
+                    <input type="email" name="emailInscricao" id="emailInscricao" placeholder="E-mail" required>
                     <label for="curso-desejado">Selecione o curso:</label>
                     <select name="curso-desejado" id="curso-desejado">
                         <option value="" selected disabled>Selecione</option>
@@ -39,9 +39,11 @@
                         <option value="Cursando">Cursando</option>
                         <option value="Interrompido">Interrompido</option>
                         <option value="Concluído">Concluído</option>
-                    </select><br>
-                    <button type="reset" class="btnLimpar">Limpar</button>
-                    <button type="submit" class="btnRegistrar">Registrar</button>
+                    </select>
+                    <div class="botoesForm">
+                        <button type="reset" class="btnLimpar">Limpar</button>
+                        <button type="submit" class="btnRegistrar">Registrar</button>
+                    </div>                    
                 </form>
                 <hr>
                 <h1>ALUNOS INSCRITOS NOS CURSOS</h1>

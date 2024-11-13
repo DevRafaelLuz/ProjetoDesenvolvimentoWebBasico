@@ -18,14 +18,16 @@
             <section id="registro-alunos">
                 <h1>REGISTRAR NOVO ALUNO</h1>
                 <form method="post" id="formRegistro">
-                    <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
-                    <input type="number" name="idade" id="idade" placeholder="Idade" oninput="validateInput(this)" required><br>
-                    <input type="email" name="email" id="email" placeholder="E-mail" required><br>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required><br>
-                    <label for="nascimento" id="data">Data de Nascimento:</label><br>
-                    <input type="date" name="nascimento" id="nascimento" required><br>                    
-                    <button type="reset" class="btnLimpar">Limpar</button>
-                    <button type="submit" class="btnRegistrar">Registrar</button>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="number" name="idade" id="idade" placeholder="Idade" oninput="validateInput(this)" required>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+                    <label for="nascimento" id="data">Data de Nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento" required>
+                    <div class="botoesForm">
+                        <button type="reset" class="btnLimpar">Limpar</button>
+                        <button type="submit" class="btnRegistrar">Registrar</button>
+                    </div> 
                 </form>
                 <hr>
                 <h1>DADOS DOS ALUNOS</h1>
