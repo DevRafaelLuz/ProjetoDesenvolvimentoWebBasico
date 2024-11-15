@@ -4,6 +4,11 @@ body {
     background-color: #ccc;
 }
 
+body::-webkit-scrollbar { 
+    width: 0px;
+    height: 0px;
+}
+
 header {
     background: linear-gradient(to top, cornflowerblue, midnightblue);
     width: 100%;
@@ -113,7 +118,7 @@ main {
     }
 
     & .btnRegistrar, .btnLimpar {
-        width: 28.3vw;
+        width: 28.6vw;
         min-width: 151px;
         border-radius: 4px;
         cursor: pointer;
