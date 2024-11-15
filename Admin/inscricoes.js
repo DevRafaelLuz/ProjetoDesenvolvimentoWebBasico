@@ -49,6 +49,29 @@ function atualizarTabelaInscricoes() {
     });
 }
 
+const validateSelectInscricoes = e => { 
+    const selectElementCurso = document.getElementById('curso-desejado'); 
+    const selectElementStatus = document.getElementById('statusCurso');
+
+    if (selectElementCurso.value === "Selecione") { 
+        selectElementCurso.style.borderColor = "red";
+        selectElementStatus.style.borderColor = "red"; 
+        e.preventDefault();
+    } else {
+        selectElementCurso.style.border = "none";
+    }
+
+    if (selectElementStatus.value === "Selecione") {
+        selectElementCurso.style.borderColor = "red";
+        selectElementStatus.style.borderColor = "red"; 
+        e.preventDefault();
+    } else {
+        selectElementStatus.style.border = "none";
+    }
+};
+
+document.getElementById('btnResgistrarInscricao').addEventListener('click', validateSelectInscricoes);
+
 function removerInscricao(id) {
     inscricoes.splice(id, 1);
     localStorage.setItem('inscricoes', JSON.stringify(inscricoes));

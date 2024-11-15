@@ -63,12 +63,20 @@ const validateSelect = e => {
     const selectElement = document.getElementById('nome-curso-depoimento'); 
     const selectElementNota = document.getElementById('nota');
 
-    if (selectElement.value === "Selecione" || selectElementNota.value === "Selecione") { 
+    if (selectElement.value === "Selecione") { 
         selectElement.style.border = "solid";
         selectElement.style.borderColor = "red";
+        e.preventDefault();
+    } else {
+        selectElement.style.border = "none";
+    }
+
+    if (selectElementNota.value === "Selecione") {
         selectElementNota.style.border = "solid";
         selectElementNota.style.borderColor = "red"; 
         e.preventDefault();
+    } else {
+        selectElementNota.style.border = "none";
     }
 };
 
@@ -76,7 +84,6 @@ document.getElementById('btnEnviarDepoimento').addEventListener('click', validat
 
 window.addEventListener('load', function() {
     adicionarDepoimento();
-    /* localStorage.clear(); */
 });
 
 window.addEventListener('load', function() {
