@@ -104,9 +104,9 @@
         <dialog id="novo-depoimento">
             <h2>Depoimento</h2>
             <form method="post" id="formDepoimento">  
-                <label for="descricao" id="label-textarea">Digite o seu depoimento:</label><br>              
-                <textarea name="descricao" id="descricao" required></textarea><br>
-                <label for="nome-curso-depoimento" id="label-nome-curso">Selecione o curso que esta avaliando:</label><br>
+                <label for="descricao" id="label-textarea">Digite o seu depoimento:</label>           
+                <textarea name="descricao" id="descricao" required></textarea>
+                <label for="nome-curso-depoimento" id="label-nome-curso">Selecione o curso que esta avaliando:</label>
                 <select name="nome-curso-depoimento" id="nome-curso-depoimento">
                     <option value="Selecione" selected disabled>Selecione</option>
                     <option value="Matemática">Matemática</option>
@@ -118,8 +118,8 @@
                     <option value="História">História</option>
                     <option value="Educação Física">Educação Física</option>
                     <option value="Artes">Artes</option>
-                </select><br>
-                <label for="nota" id="label-nota">Dê uma nota para esse Curso:</label><br>
+                </select>
+                <label for="nota" id="label-nota">Dê uma nota para esse Curso:</label>
                 <select name="nota" id="nota">
                     <option value="">Selecione</option>
                     <option value="Péssimo">Péssimo</option>
@@ -127,18 +127,22 @@
                     <option value="Ok">Ok</option>
                     <option value="Bom">Bom</option>
                     <option value="Excelente">Excelente</option>
-                </select><br>
-                <button type="reset" id="btnFecharDepoimento">Sair</button>
-                <button type="submit" id="btnEnviarDepoimento">Enviar</button>
+                </select>
+                <div>
+                    <button type="reset" id="btnFecharDepoimento">Sair</button>
+                    <button type="submit" id="btnEnviarDepoimento">Enviar</button>
+                </div>
             </form>
         </dialog>
         <dialog id="login">
             <h2>Login</h2>
             <form method="post">                
-                <input type="email" name="email" id="email" placeholder="E-mail"><br>
-                <input type="password" name="senha" id="senha" placeholder="Senha"><br>
-                <button type="button" id="btnFechar">Sair</button>
-                <button type="submit" id="btnEntrar">Entrar</button>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <div>
+                    <button type="button" id="btnFechar">Sair</button>
+                    <button type="submit" id="btnEntrar">Entrar</button>
+                </div>
             </form>
         </dialog>
         <footer>

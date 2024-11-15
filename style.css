@@ -159,31 +159,32 @@ main {
 }
  
 #login {
-    width: 30%;
     height: 40%;
-    padding: 20px;
-    padding-top: 0px;
+    padding: 10px 25px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: rgb(0, 0, 20);
     color: aqua;
     text-align: center;
 
+    & form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     & #email, #senha {
-        width: 90%;
-        padding: 9px 0 9px 5px;
+        padding: 9px 150px 9px 5px;
         font-size: 18px;
         border-radius: 5px;
         border: none;
         background-color: rgba(0, 0, 75, 0.836);
         border-color: white;
         color: white;
-        margin-top: 20px;
     }
 
     & button {
-        margin-top: 40px;
-        width: 45%;
+        width: 49.4%;
         border-radius: 5px;
         font-size: 18px;
         padding: 9px 0;
@@ -220,10 +221,21 @@ main {
     }
 }
 
+@media (max-width: 500px) {
+    #login {
+        & #email, #senha {
+            padding: 9px 100px 9px 5px;
+        }
+
+        & button {
+            width: 49.3%;
+        }
+    }
+}
+
 #novo-depoimento {
-    width: 30%;
-    height: 77%;
-    padding: 20px;
+    height: 75%;
+    padding: 0 20px;
     padding-top: 0px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -232,22 +244,24 @@ main {
     border-color: aqua;
     text-align: center;
 
+    & form {
+        display: flex;
+        flex-direction: column;
+    }
+
     & textarea {
-        width: 99%;
         height: 30vh;
         border-radius: 8px;
         resize: none;
-        padding: 0 0 0 6px;
+        padding: 0 150px 0 6px;
         background-color: rgba(0, 0, 75, 0.836);
         border: none;
-        margin-top: 10px;
         margin-bottom: 10px;
         color: white;
         font-size: 18px;
     }
 
     & #nome-curso {
-        width: 100%;
         border-radius: 4px;
         padding: 12px 0 10px 6px;
         border: none;
@@ -259,7 +273,6 @@ main {
     }
 
     & select {
-        width: 100%;
         padding: 10px 0 10px 6px;
         font-size: 18px;
         background-color: rgba(0, 0, 75, 0.836);
@@ -267,34 +280,10 @@ main {
         border-radius: 4px;
         border: none;
         margin-bottom: 20px;
-        margin-top: 6px;
     }
 
     & #label-textarea, #label-nome-curso, #label-nota {
-        position: absolute;
-        left: 22px;
-    }
-
-    & #ruim {
-        position: absolute;
-        font-size: 14px;
-        transform: translate(0, -10%);
-        margin-top: 20px;
-        margin-left: 2px;
-    }
-
-    & #ok {
-        position: absolute;
-        font-size: 14px;
-        margin-top: 20px;
-        margin-left: 9px;
-    }
-
-    & #bom {
-        position: absolute;
-        font-size: 14px;
-        margin-left: 5px;
-        margin-top: 20px;
+        margin-bottom: 3px;
     }
 
     & #btnEnviarDepoimento {
@@ -325,6 +314,14 @@ main {
     & #btnFecharDepoimento:hover {
         background-color: red;
         color: white;
+    }
+}
+
+@media (max-width: 500px) {
+    #novo-depoimento {
+        & textarea {
+            padding: 9px 100px 0 5px;
+        }
     }
 }
 
