@@ -59,8 +59,24 @@ function preencherTabela() {
     });
 }
 
+const validateSelect = e => { 
+    const selectElement = document.getElementById('nome-curso-depoimento'); 
+    const selectElementNota = document.getElementById('nota');
+
+    if (selectElement.value === "Selecione" || selectElementNota.value === "Selecione") { 
+        selectElement.style.border = "solid";
+        selectElement.style.borderColor = "red";
+        selectElementNota.style.border = "solid";
+        selectElementNota.style.borderColor = "red"; 
+        e.preventDefault();
+    }
+};
+
+document.getElementById('btnEnviarDepoimento').addEventListener('click', validateSelect);
+
 window.addEventListener('load', function() {
     adicionarDepoimento();
+    /* localStorage.clear(); */
 });
 
 window.addEventListener('load', function() {
