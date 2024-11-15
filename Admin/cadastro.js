@@ -46,7 +46,7 @@ function atualizarTabelaAlunos() {
         <td>${aluno.email}</td>
         <td>${aluno.telefone}</td>
         <td>${aluno.nascimento}</td>
-        <td>
+        <td id="btnTabela">
             <a href="?chave=${chave}" class="alterar">Alterar</a>
             <a href="#" onclick="removerAluno(${chave})" class="excluir">Excluir</a>
         </td>`;
